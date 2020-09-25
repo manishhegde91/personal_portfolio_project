@@ -23,6 +23,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("",views.home,name="home"),
     path("aboutus/",views.aboutus,name="aboutus"),
+    path("passwordgenerator/home1/",views.home1,name="home1"),
+    path("passwordgenerator/aboutus1/",views.aboutus1,name="aboutus1"),
+    path("passwordgenerator/password/",views.password,name="password"),
     path('blog/', include('blog.urls')),
 ]
 

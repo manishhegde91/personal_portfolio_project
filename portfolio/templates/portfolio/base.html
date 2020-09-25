@@ -34,12 +34,15 @@
   </button>
 
   <div class="collapse navbar-collapse text-center" id="navbarNav">
-    <ul class="navbar-nav m1-auto">
+    <ul class="nav justify-content-end">
       <li class="nav-item">
         <a class="nav-link" href="{% static 'portfolio/Latest resume Manish.pdf' %}">Resume</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="{% url 'aboutus' %}">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'home1' %}">Random Password Generator</a>
       </li>
       <li>
         <a role="button" href="{% url 'blog:all_blogs' %}" class="btn btn-primary">Blog</a>
