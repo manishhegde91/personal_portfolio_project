@@ -23,9 +23,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '%#5*kcbwx5v08fw%tm7rehcv7ye!0lfv50hc0iyd4_7q74(bse'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+#DEBUG = False
 
-ALLOWED_HOSTS = ['manishhegde91.pythonanywhere.com']
+#ALLOWED_HOSTS = ['manishhegde91.pythonanywhere.com']
+
+DEBUG = True
+
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -130,3 +134,5 @@ try:
     from .local_settings import *
 except ImportError:
     print("Looks like no local file. You must be on production.")
+
+LOGIN_URL = '/login'

@@ -35,14 +35,17 @@
 
   <div class="collapse navbar-collapse text-center" id="navbarNav">
     <ul class="nav justify-content-end">
-      <li class="nav-item">
+      <!--<li class="nav-item">
         <a class="nav-link" href="{% static 'portfolio/Latest resume Manish.pdf' %}">Resume</a>
-      </li>
+      </li>-->
       <li class="nav-item">
         <a class="nav-link" href="{% url 'aboutus' %}">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{% url 'home1' %}">Random Password Generator</a>
+        <a class="nav-link" href="{% url 'home1' %}">Random Password Generator App</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'home2' %}">Todo App</a>
       </li>
       <li>
         <a role="button" href="{% url 'blog:all_blogs' %}" class="btn btn-primary">Blog</a>

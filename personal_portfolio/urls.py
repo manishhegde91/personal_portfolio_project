@@ -27,6 +27,22 @@ urlpatterns = [
     path("passwordgenerator/aboutus1/",views.aboutus1,name="aboutus1"),
     path("passwordgenerator/password/",views.password,name="password"),
     path('blog/', include('blog.urls')),
+
+    #todo
+    #path('todo/admin', admin.site.urls),
+    #AUTH_PASSWORD_VALIDATORS
+    path('todo/signup/', views.signupuser, name='signupuser'),
+    path('todo/login/', views.loginuser,name='loginuser'),
+    path('todo/logout/', views.logoutuser,name='logoutuser'),
+
+    #Todos
+    path('todo/home2',views.home2, name='home2'),
+    path('todo/create/',views.createtodos, name='createtodos'),
+    path('todo/current/',views.currenttodos, name='currenttodos'),
+    path('todo/completed/',views.completedtodos, name='completedtodos'),
+    path('todo/<int:todo_pk>',views.viewtodo, name='viewtodo'),
+    path('todo/<int:todo_pk>/complete',views.completetodo, name='completetodo'),
+    path('todo/<int:todo_pk>/delete',views.deletetodo, name='deletetodo'),
 ]
 
 urlpatterns = urlpatterns + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
